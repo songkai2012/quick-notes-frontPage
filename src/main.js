@@ -5,8 +5,10 @@ import MixIn from '@/vueMixin'
 import App from './App'
 import router from './router'
 import Http from '@/fetch/axios'
+import ElementUi from 'element-ui'
 
 Vue.config.productionTip = false
+Vue.use(ElementUi)
 Vue.mixin(MixIn)
 Vue.prototype.$http = Http
 
