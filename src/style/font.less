@@ -1,0 +1,53 @@
+
+.font(@size:12px,@lineHeight) when (@lineHeight > 1px){
+  font-size: @size;
+  line-height: @lineHeight;
+}
+.font(@size:12px,@lineHeight) when (@lineHeight = 0){
+  font-size: @size;
+}
+
+.regular(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Regular, sans-serif;
+}
+.tralight(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Ultralight, sans-serif;
+}
+.light(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Light, sans-serif;
+}
+.thin(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Thin, sans-serif;
+}
+.medium(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Medium, sans-serif;
+}
+.bold(@size,@lineHeight:0){
+  .font(@size,@lineHeight);
+  font-family: PingFangSC-Semibold, sans-serif;
+}
+
+/*-end:
+@font-face {
+  font-family: PingFangSC-Semibold ;
+  //src: url("../assets/font/PingFang_Bold.ttf");
+}
+@font-face {
+  font-family: PingFangSC-Light ;
+  //src: url("../assets/font/PingFang_Light.ttf");
+}
+@font-face {
+  font-family: PingFangSC-Medium ;
+  //src: url("../assets/font/PingFang_Medium.ttf");
+}
+@font-face {
+  font-family: PingFangSC-Regular ;
+  //src: url("../assets/font/PingFang_Regular.ttf");
+}
+-*/
+
